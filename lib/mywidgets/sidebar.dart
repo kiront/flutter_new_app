@@ -8,7 +8,13 @@ class Sidebar extends StatelessWidget {
     return Drawer(
         child: ListView(
           children: [
-            ListTile(
+            UserAccountsDrawerHeader(
+              accountName: Text("Kiran Thuyaju"), accountEmail: Text("kiransth321@gmail.com"),
+              currentAccountPicture: CircleAvatar(
+                child: Text("K"),
+              ),
+              ),
+              ListTile(
               onTap: (){},
                 leading: Icon(
                   Icons.home
